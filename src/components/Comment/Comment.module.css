@@ -1,0 +1,14 @@
+.commentWrapper {
+    background-color: #fff;
+    border: 1px solid rgba(18, 58, 133, 0.603);
+    margin: 10px;
+}
+
+.upperPart {
+    background-color: rgba(211, 217, 228, 0.219);
+    padding: 5px;
+}
+
+.lowerPart {
+    padding: 4px;
+}

@@ -1,0 +1,33 @@
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputWrapper {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid rgba(0, 45, 128, 0.603);
+    border-radius: 4px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.confirmBtn {
+    background-color: rgba(0, 45, 128, 0.603);
+    width: 150px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.confirmBtn:hover {
+    background-color: rgba(10, 53, 134, 0.849);
+}
