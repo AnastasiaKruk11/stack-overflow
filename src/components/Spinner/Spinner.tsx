@@ -4,7 +4,7 @@ import styles from './Spinner.module.css';
 
 export default function Spinner() {
     return (
-        <div className={styles['spinnerWrapper']}>
+        <div className={styles.spinnerWrapper}>
             <FontAwesomeIcon icon={faSpinner} spin size="5x" />
         </div>
     )

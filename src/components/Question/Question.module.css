@@ -13,7 +13,7 @@
 }
 
 .questionIcon {
-    padding: 5px;
+    padding: 8px;
 }
 
 .questionTitle {
@@ -26,7 +26,16 @@
 }
 
 .questionContent {
-    padding: 10px;
+    padding: 2px 14px;
+}
+
+.answerContent {
+    padding: 2px 14px;
+}
+
+.answersWrapper {
+    padding-bottom: 20px;
+    animation: my-animation .5s ease-out forwards;
 }
 
 .openContentBtn {
@@ -35,4 +44,17 @@
     width: 50px;
     margin: 10px;
     cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+}
+
+@keyframes my-animation {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(40px);
+    }
 }

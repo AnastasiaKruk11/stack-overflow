@@ -10,9 +10,9 @@ export default function StartPage() {
     }
     
     return (
-        <div className={styles['wrapper']}>
-            <button>Register</button>
-            <button>Login</button>
+        <div className={styles.wrapper}>
+            <button onClick={() => handleClick('/register')}>Register</button>
+            <button onClick={() => handleClick('/login')}>Login</button>
             <button onClick={() => handleClick('/home')}>Home Page</button>
         </div>
     )

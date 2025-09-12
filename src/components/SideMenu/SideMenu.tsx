@@ -11,14 +11,14 @@ export default function SideMenu() {
     }
 
     return (
-        <div className={styles['sideMenuWrapper']}>
-            <div className={styles['btnsWrapper']}>
+        <div className={styles.sideMenuWrapper}>
+            <div className={styles.btnsWrapper}>
                 <button onClick={() => handleClick('/home')}><FontAwesomeIcon icon={faHouse} />   Home</button>
-                <button><FontAwesomeIcon icon={faPerson} />   My Account</button>
-                <button><FontAwesomeIcon icon={faNewspaper} />   Post snippet</button>
+                <button onClick={() => handleClick('/account')}><FontAwesomeIcon icon={faPerson} />   My Account</button>
+                <button onClick={() => handleClick('/create-post')}><FontAwesomeIcon icon={faNewspaper} />   Post snippet</button>
                 <button><FontAwesomeIcon icon={faNewspaper} />   My snippets</button>
                 <button onClick={() => handleClick('/questions')}><FontAwesomeIcon icon={faCircleQuestion} />   Questions</button>
-                <button><FontAwesomeIcon icon={faUsers} />   Users</button>
+                <button onClick={() => handleClick('/users')}><FontAwesomeIcon icon={faUsers} />   Users</button>
             </div>
         </div>
     )

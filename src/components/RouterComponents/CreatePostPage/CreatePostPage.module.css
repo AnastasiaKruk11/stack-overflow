@@ -1,0 +1,31 @@
+.snippetWrapper {
+    width: 100%;
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.labelField {
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.selectWrapper {
+    margin-bottom: 20px;
+}
+
+.editorWrapper {
+    margin-bottom: 30px;
+    border: 1px solid rgba(18, 58, 133, 0.205);
+}
+
+.submitSnippetBtn {
+    width: 100%;
+    background-color: rgba(5, 68, 185, 0.589);
+}
