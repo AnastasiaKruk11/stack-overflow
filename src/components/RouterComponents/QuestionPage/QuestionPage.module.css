@@ -1,0 +1,29 @@
+.questionWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.questionWrapper span {
+    margin-bottom: 20px;
+}
+
+.questionHeader {
+    font-weight: 700;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.editorWrapper {
+    margin-bottom: 30px;
+    border: 1px solid rgba(18, 58, 133, 0.205);
+}
+
+.answerWrapper {
+    padding: 10px;
+    background-color: #fff;
+    margin: 5px 0;
+}

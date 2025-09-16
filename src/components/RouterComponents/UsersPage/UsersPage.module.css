@@ -1,0 +1,29 @@
+.usersWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: center;
+}
+
+.userWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(18, 58, 133, 0.26);
+    padding: 30px;
+    margin: 10px;
+    width: 150px;
+    overflow: hidden;
+}
+
+.userAvatar {
+    margin-bottom: 8px;
+}
+
+.pages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}

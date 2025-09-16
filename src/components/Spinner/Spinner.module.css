@@ -1,0 +1,5 @@
+.spinnerWrapper {
+    position: fixed;
+    left: calc(100% / 2);
+    bottom: calc(100% / 2);
+}

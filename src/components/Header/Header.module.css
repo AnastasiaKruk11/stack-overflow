@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 8px;
+    background-color: rgba(0, 45, 128, 0.603);
+}
+
+.mainBtn {
+    width: 160px;
+}
+
+.mainBtn:hover {
+    background-color: rgba(69, 69, 85, 0.171);
+}
+
+button {
+    background: none;
+    color: #fff;
+}
+
+.rightWrapper {
+    display: flex;
+}
+
+.rightWrapper button {
+    margin: 5px;
+}
+
+.signBtn {
+    background-color: #fff;
+    width: 100px;
+    color: black;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.languageBtn {
+    all: initial;
+    cursor: pointer;
+}

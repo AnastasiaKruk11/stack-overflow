@@ -1,0 +1,44 @@
+.post {
+    border: 1px solid rgba(18, 58, 133, 0.603);
+    margin: 5px;
+    background-color: rgba(211, 217, 228, 0.219);
+}
+
+.headPart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 5px;
+}
+
+.stringNumber {
+    width: 15px;
+    background-color: rgba(162, 168, 179, 0.219);
+    padding: 5px;
+}
+
+.code {
+    background-color: white;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.bottomPart {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 5px;
+}
+
+.marks {
+    display: flex;
+}
+
+.likes {
+    margin-right: 10px;
+}
+
+.post button {
+    margin: 1px;
+    padding: 1px;
+    color: inherit;
+}

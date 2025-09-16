@@ -1,0 +1,93 @@
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    min-width: 500px;
+}
+
+.headerWrapper {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.userContent {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(18, 58, 133, 0.603);
+    margin: 30px;
+    padding: 20px 50px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.userBtns button:first-of-type {
+    background-color: rgb(212, 146, 22);
+    margin-right: 15px;
+}
+
+.userBtns button:last-of-type {
+    background-color: rgb(156, 19, 19);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.formsWrapper {
+    display: flex;
+    margin: 20px 80px;
+    justify-content: space-around;
+    min-width: 600px;
+}
+
+.userChange {
+    display: flex;
+    flex-direction: column;
+}
+
+.editText {
+    text-decoration: underline;
+}
+
+.changeText {
+    font-weight: 600;
+}
+
+.passwordChange {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    margin: 10px 0;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.confirmBtn {
+    background-color: green;
+    font-size: 14px;
+    max-width: 240px;
+    margin-top: 15px;
+}

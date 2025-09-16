@@ -1,0 +1,15 @@
+import styles from './Comment.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import type { CommentsData } from '../types';
+
+export default function Comment( {item}: CommentsData ) {
+
+    console.log(item)
+    return (
+        <div className={styles.commentWrapper}>
+            <div className={styles.upperPart}><FontAwesomeIcon icon={faUser}  />{item.user.username}</div>
+            <div className={styles.lowerPart}>{item.content}</div>
+        </div>
+    )
+}

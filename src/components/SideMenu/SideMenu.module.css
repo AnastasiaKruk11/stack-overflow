@@ -1,0 +1,21 @@
+.sideMenuWrapper {
+    width: 200px;
+    background-color: rgba(0, 45, 128, 0.603);
+    min-height: 570px;
+    display: flex;
+}
+
+.btnsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.btnsWrapper button {
+    text-align: left;
+    padding: 15px;
+}
+
+.btnsWrapper button:hover {
+    background-color: rgba(2, 45, 126, 0.603);
+}
