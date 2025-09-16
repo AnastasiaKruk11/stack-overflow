@@ -43,7 +43,6 @@ const Post: React.FC<PostProps> = ( { item } ) => {
                         language={item.language}
                         theme="vs"
                         value={item.code}
-                        onChange={item.onChange}
                     />
                 </div>
             </div>

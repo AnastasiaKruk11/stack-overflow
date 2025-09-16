@@ -4,13 +4,19 @@ export interface UserData {
     role: string;
 }
 
+export interface MarksData {
+    id: string;
+    type: string;
+    user: UserData
+}
+
 export interface SnippetData {
     id: string;
     language: string;
     code: string;
     user: UserData;
-    ///marks?: any;
-    //onChange?: any;
+    marks?: MarksData;
+    //onChange?: void;
     comments: CommentData[]
 }
 
@@ -28,6 +34,7 @@ export interface AnswerData {
     id: string;
     content: string;
     isCorrect?: boolean;
+    user: UserData
 }
 
 export interface QuestionData {
@@ -37,6 +44,7 @@ export interface QuestionData {
     attachedCode?: string;
     answers: AnswerData[];
     isResolved?: boolean;
+    onClick?: void;
     user: UserData;
 }
 
@@ -50,4 +58,22 @@ export interface MetaData {
     sortBy: string[];
     totalItems: number;
     totalPages: number;
+}
+
+export interface UserStatisticsData {
+    commentsCount: number;
+    correctAnswersCount: number;
+    dislikesCount: number;
+    likesCount: number;
+    questionsCount: number;
+    rating: number;
+    regularAnswersCount: number;
+    snippetsCount: number;
+}
+
+export interface SelectedUserData {
+    id: string;
+    role: string;
+    statistic: UserStatisticsData;
+    username: string
 }

@@ -15,6 +15,7 @@ import UserPage from "../components/RouterComponents/UserPage/UserPage";
 import QuestionsPage from "../components/RouterComponents/QuestionsPage/QuestionsPage";
 import CreateQuestionPage from "../components/RouterComponents/CreateQuestionPage/CreateQuestionPage";
 import EditQuestionPage from "../components/RouterComponents/EditQuestionPage/EditQuestionPage";
+import QuestionPage from "../components/RouterComponents/QuestionPage/QuestionPage";
 
 
 export const router = createBrowserRouter([
@@ -63,12 +64,16 @@ export const router = createBrowserRouter([
         element: <UsersPage />,
       },
       {
-        path: "/user",
+        path: "/user/:id",
         element: <UserPage />,
       },
       {
         path: "/questions",
         element: <QuestionsPage />,
+      },
+      {
+        path: "/question/:id",
+        element: <QuestionPage />,
       },
       {
         path: "/create-question",

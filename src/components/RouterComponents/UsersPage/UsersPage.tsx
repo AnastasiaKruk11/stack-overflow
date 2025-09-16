@@ -6,6 +6,7 @@ import { faFaceSmile } from '@fortawesome/free-regular-svg-icons';
 import Pagination from '@mui/material/Pagination';
 import api from '../../api';
 import type { UserData, MetaData } from '../../types';
+import { useNavigate, generatePath } from 'react-router-dom';
 
 export default function UsersPage() {
 
@@ -28,6 +29,8 @@ export default function UsersPage() {
         });
     }, [setAppState, page]);
 
+    const navigate = useNavigate();
+
     return (
         <div className={styles.usersWrapper}>
             {!appState && <Spinner />}
@@ -36,7 +39,7 @@ export default function UsersPage() {
 
             {appState?.map(user => (
             
-            <div className={styles.userWrapper}>
+            <div className={styles.userWrapper} onClick={() => {navigate(generatePath('/user/:id', {id: user.id}))}}>
                 <div className={styles.userAvatar}><FontAwesomeIcon icon={faFaceSmile} size='3x' /></div>
                 <div>User:  {user.username}</div>
                 <div>Role:  {user.role}</div>
